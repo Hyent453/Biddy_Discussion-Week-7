@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #f0faff;
+  --text-color: #2a2a2a;
+  --accent-color: #00b4d8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+header {
+  text-align: center;
+}
+
+.dancing-name {
+  font-size: 2.5em;
+  color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+}
+
+.dancing-name span {
+  display: inline-block;
+  animation: dance 2.5s infinite;
+}
+
+@keyframes dance {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.dancing-name span:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+.dancing-name span:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+.toggle-theme {
+  background: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+table th {
+  background-color: var(--accent-color);
+  color: white;
+}

@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Biddy Mwendar - Hobbies & Inspiration</title>
-  <link rel="stylesheet" href="hobbies-style.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1 id="name-header">Biddy Mwendar</h1>
+    <h1 id="animated-name"></h1>
+    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
   </header>
 
-  <main class="content">
-    <section>
-      <h2>My Hobbies</h2>
-      <p>Outside of work, I find joy in a few soulful hobbies. I love diving into biographies of inspiring medical figures—there’s always something to learn from those who walked this path before me. I’m also an avid fan of health podcasts; they spark new ideas and help me stay connected to the broader healthcare world.</p>
-    </section>
+  <div class="content">
+    <h2>My Soulful Hobbies</h2>
+    <p>Outside of work, I cherish hobbies that nurture both my heart and mind. These pastimes not only refresh me but also fuel my professional growth.</p>
 
-    <section>
-      <h2>My Reset Time</h2>
-      <p>When I need to reset, I step into nature. A peaceful walk, the rustle of trees, and quiet moments in meditation do wonders for my well-being. These activities keep me grounded and remind me why I chose this path.</p>
-    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Hobby</th>
+          <th>Description</th>
+          <th>Benefit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reading Biographies</td>
+          <td>Stories of great nurses and medical pioneers</td>
+          <td>Inspiration and historical insights</td>
+        </tr>
+        <tr>
+          <td>Health Podcasts</td>
+          <td>Weekly updates from the world of wellness</td>
+          <td>Stay informed on trends and ideas</td>
+        </tr>
+        <tr>
+          <td>Nature Walks</td>
+          <td>Relaxing strolls in the countryside or park</td>
+          <td>Mental clarity and rejuvenation</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <section>
-      <h2>My Inspiration</h2>
-      <p>One of my biggest inspirations is Florence Nightingale—her courage and tireless service during a time of war continue to light my path. Modern-day nurses who advocate for underserved communities also fuel my motivation daily.</p>
-    </section>
+    <img src="https://cdn.pixabay.com/photo/2020/04/03/12/15/nurse-4997560_1280.jpg" alt="Inspiring nurse" class="gallery-img">
+    <p class="img-caption">Inspiration from those who serve with heart.</p>
 
-    <section>
-      <h2>More Info</h2>
-      <p><a href="index.html" target="_self">← Back to About Me</a></p>
-    </section>
-  </main>
+    <h2>My Inspiration</h2>
+    <p>Florence Nightingale remains my guiding light—her courage during the Crimean War and her relentless drive to improve nursing continue to inspire my practice. Today’s healthcare heroes working in underserved areas also deeply motivate me.</p>
 
-  <script src="hobbies-script.js"></script>
+    <p><a href="index.html">← Back to About Me</a></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

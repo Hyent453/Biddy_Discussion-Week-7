@@ -1,88 +1,84 @@
 :root {
-  --bg-color: #f0faff;
-  --text-color: #2a2a2a;
-  --accent-color: #00b4d8;
+  --bg-color: #fffdf7;
+  --text-color: #1f1f1f;
+  --accent-color: #ff6f61;
+  --secondary-color: #f9d5e5;
 }
 
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: var(--bg-color);
+  background-color: var(--bg-color);
   color: var(--text-color);
   padding: 20px;
-  transition: all 0.3s ease;
+  transition: background 0.3s, color 0.3s;
 }
 
 header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.dancing-name {
-  font-size: 2.5em;
-  color: var(--accent-color);
+#dancing-name {
+  font-size: 2.8em;
+  font-weight: bold;
   display: flex;
   justify-content: center;
+  gap: 5px;
 }
 
-.dancing-name span {
+#dancing-name span {
+  animation: dance 2s infinite ease-in-out;
   display: inline-block;
-  animation: dance 2.5s infinite;
+  color: var(--accent-color);
+  font-family: 'Segoe UI', sans-serif;
 }
 
 @keyframes dance {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-.dancing-name span:nth-child(odd) {
-  animation-delay: 0.2s;
-}
-.dancing-name span:nth-child(even) {
-  animation-delay: 0.4s;
+  50% { transform: translateY(-10px); }
 }
 
 .toggle-theme {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   color: white;
-  padding: 10px 20px;
   border: none;
+  padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 10px;
+  font-size: 1em;
 }
 
 .content {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
-section {
+.hobby {
   margin-bottom: 40px;
 }
 
-section img {
-  width: 100%;
-  max-width: 600px;
+h2 {
+  font-size: 1.5em;
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+img {
   display: block;
-  margin: 10px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  max-width: 500px;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
-  background-color: #ffffff;
-}
-
-table th {
-  background-color: var(--accent-color);
-  color: white;
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
 }
